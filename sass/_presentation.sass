@@ -1,0 +1,60 @@
+// стили для секции
+.presentation
+	padding: 7.15rem 0 11rem
+	background-color: hsl(240, 18%, 97%)
+	text-align: center
+	overflow: hidden // чтобы слайдер не создавал нижний скролл
+	@media (max-width: $md2)
+		padding: 2.5rem 0
+	// заголовок секции
+	&__title
+		margin: 0 0 2.35rem 0
+	// декоративная линия под заголовком
+	&__decor-line
+		width: 50px
+		height: 2px
+		border-radius: 1px
+		background: hsl(215, 90%, 55%)
+		margin: 0 auto 2.15rem
+	// небольшой заголовок для слайдера
+	&__text
+		font-size: 0.6rem
+		font-weight: 700
+		letter-spacing: 1.2px
+		color: hsl(218, 4%, 56%)
+		text-transform: uppercase
+	// блок со слайдером
+	&__slider
+		margin: 6.7rem 0 0 0
+		@media (max-width: $md2)
+			margin: 4.5rem 0 0 0
+// стили для слайдера
+.presentation-slider
+	& .slick-track
+		display: flex
+		align-items: center
+	// слайд с изображением
+	&__item
+		width: 320px
+		height: 568px
+		transition: all .5s
+		margin: 0 0.75rem 0
+		box-shadow: 3.4px 9.4px 16px 0 hsla(240, 1%, 24%, 0.15), 15px 41.3px 66px 0 hsla(220, 5%, 38%, 0.28)
+		@media (max-width: $md2)
+			width: 220px
+			height: 408px
+		& img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: all .5s
+	// активный слайд
+	& .slick-slide.slick-active.presentation-slider__item
+		width: 369px
+		height: 753px
+		@media (max-width: $md2)
+			width: 320px
+			height: 568px
+		@media (max-width: $md4)
+			width: 220px
+			height: 408px

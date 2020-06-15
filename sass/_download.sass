@@ -1,0 +1,97 @@
+// стили для секции
+.download
+	padding: 3.75rem 0 6.55rem
+	background: hsl(240, 18%, 97%)
+	text-align: center
+	&__conteiner
+		display: flex
+		flex-direction: column
+		align-items: center
+	// логотип
+	&__logo
+		width: 118px
+		height: 10px
+		opacity: 0.5
+		margin: 0 0 1.85rem 0
+		& img
+			width: 100%
+			height: 100%
+	// заголовок секции
+	&__title
+		margin: 0 0 2.35rem 0
+	// блок с формой
+	&__form
+		margin: 0 0 3.3rem 0
+	// текст в секции
+	&__text
+		font-size: 0.6rem
+		font-weight: 400
+		letter-spacing: 1.2px
+		color: hsla(229, 13%, 26%, 0.3)
+		text-transform: uppercase
+		margin: 0 0 1.1rem 0
+	// кнопка-ссылка для загрузки приложения
+	&__btn
+		width: 140px
+		height: 40px
+		border-radius: 30px
+		overflow: hidden
+		& img
+			width: 100%
+			height: 100%
+			object-fit: cover
+// стили для формы отправки инвайта
+.download-form
+	width: 502px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-radius: 1.25rem
+	border: 1px solid hsla(230, 8%, 15%,0.2)
+	padding: 0.2rem 0.25rem 0.2rem 1.3rem
+	@media (max-width: $md3)
+		width: 100%
+		flex-direction: column
+		border: none
+		padding: 0
+	& input,
+	& button
+		border: none
+		font-size: 0.8rem
+		font-weight: 400
+		outline: none
+		@media (max-width: $md3)
+			margin: 0 0 1rem 0
+			padding: 0
+	// поле для ввода почты
+	& input
+		color: hsl(229, 13%, 26%)
+		width: 50%
+		background: inherit
+		@media (max-width: $md3)
+			width: 100%
+			border-radius: 1.25rem
+			border: 1px solid hsla(230, 8%, 15%,0.2)
+			padding: 0.5rem 2.75rem 0.55rem 1.55rem
+			text-align: center
+	// кнопка отправки формы
+	& button
+		color: hsl(0, 0%, 100%)
+		padding: 0.5rem 2.75rem 0.55rem 1.55rem
+		background: hsl(106, 51%, 55%)
+		border-radius: 1.05rem
+		position: relative
+		cursor: pointer
+		@media (max-width: $md3)
+			width: 100%
+		&::after
+			content: ""
+			width: 12px
+			height: 10px
+			background: url("../images/arrow-icon.png") top center/100% 100% no-repeat
+			position: absolute
+			right: 1.15rem
+			top: 50%
+			transform: translateY(-50%)
+		&:hover
+			background: hsl(106, 51%, 50%)

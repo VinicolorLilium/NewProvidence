@@ -1,0 +1,68 @@
+.partners
+	padding: 10.8rem 0 9.9rem
+	overflow: hidden
+	@media (max-width: $md1)
+		text-align: center
+		padding: 2.5rem 0
+	&__conteiner
+		display: flex
+		margin: 0 -15px
+		@media (max-width: $md1)
+			margin: 0
+			flex-wrap: wrap
+	&__column
+		width: calc(50% - 30px)
+		margin: 0 15px
+		@media (max-width: $md1)
+			width: 100%
+			margin: 0 0 2rem 0
+	&__title
+		margin: 0 0 3.2rem 0
+		@media (max-width: $md2)
+			margin: 0 0 1.55rem 0
+	&__text
+		max-width: 470px
+		margin: 0 0 2.4rem 0
+		@media (max-width: $md1)
+			max-width: 100%
+		& p
+			margin: 0 0 1rem 0
+	&__img
+		position: relative
+		@media (max-width: $md1)
+			width: 100%
+			height: 250px
+		& img
+			position: absolute
+			top: 0
+			left: 0
+			object-fit: cover
+			@media (max-width: $md1)
+				width: 100%
+.partners-links
+	&__title
+		font-size: 0.6rem
+		font-weight: 700
+		letter-spacing: 1.2px
+		color: hsl(231, 8%, 16%)
+		text-transform: uppercase
+		margin: 0 0 1.55rem 0
+	&__links
+		display: flex
+		@media (max-width: $md1)
+			justify-content: center
+		@media (max-width: $md4)
+			flex-direction: column
+			align-items: center
+	&__link
+		width: 138px
+		height: 35px
+		margin: 0 1.55rem 0 0
+		position: relative
+		background: hsl(0, 0%, 100%)
+		@media (max-width: $md4)
+			margin: 0 0 1.55rem 0
+		& img
+			width: 100%
+			height: 100%
+			object-fit: cover

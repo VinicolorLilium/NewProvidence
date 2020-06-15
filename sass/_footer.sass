@@ -1,0 +1,106 @@
+.footer
+	padding: 4.5rem 0 1.3rem 0
+	@media (max-width: $md2)
+		padding: 2.5rem 0 1.3rem 0
+	&__row
+		display: flex
+		@media (max-width: $md1)
+			flex-wrap: wrap
+	&__column
+		width: 50%
+		@media (max-width: $md1)
+			width: 100%
+			margin: 0 0 2.5rem 0
+			text-align: center
+			@media (max-width: $md2)
+				flex-wrap: wrap
+		&-links
+			display: flex
+	&__logo
+		width: 140px
+		height: 13px
+		position: relative
+		margin: 0 0 1.7rem 0
+		& img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+	&__text
+		font-size: 0.9rem
+		font-weight: 400
+		line-height: 1.71
+		color: hsl(218, 4%, 56%)
+		max-width: 245px
+		margin: 0 0 1.6rem 0
+		@media (max-width: $md1)
+			margin: 0 auto 1.6rem
+			max-width: 300px
+	&__btn
+		margin: 0 0 2rem 0
+	&__social
+		display: flex
+		@media (max-width: $md1)
+			justify-content: center
+		& li + li
+			margin: 0 0 0 1.2rem
+		& a
+			font-family: 'icomoon'
+			font-size: 1.2rem
+			color: hsla(231, 8%, 16%,0.3)
+	&__list
+		width: calc(100% / 12 * 4)
+		font-size: 12px
+		@media (max-width: $md2)
+			width: 100%
+			margin: 0 0 2.5rem 0
+		& li
+			margin: 0 0 1.3rem 0
+		& a
+			font-size: 16px
+			font-weight:400
+			color: hsl(218, 4%, 56%)
+			&:hover
+				text-shadow: 1px 1px 5px rgba(38,39,44,0.5)
+	&__list-title
+		font-weight: 700
+		letter-spacing: 1.2px
+		color: hsl(231, 8%, 16%)
+		margin: 0 0 1.3rem 0
+		text-transform: uppercase
+	&__bottom
+		align-items: center
+	&__top
+		margin: 0 0 8.5rem 0
+		@media (max-width: $md1)
+			margin: 0 0 3rem 0
+	&__link
+		font-size: 14px
+		font-weight: 400
+		color: hsl(218, 4%, 56%)
+		& a
+			color: hsl(231, 77%, 57%)
+	&__copyright
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		font-size: 9px
+		font-weight: 700
+		letter-spacing: 0.9px
+		color: hsl(231, 8%, 16%)
+		text-transform: uppercase
+		@media (max-width: $md1)
+			justify-content: center
+		@media (max-width: $md2)
+			flex-direction: column
+		& img
+			width: 108px
+			height: 36px
+			object-fit: cover
+			margin: 0 0 0 11px
+			@media (max-width: $md2)
+				margin: 0.5rem 0 0 0
